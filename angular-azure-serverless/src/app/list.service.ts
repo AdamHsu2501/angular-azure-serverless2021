@@ -7,8 +7,6 @@ export class ListService {
   constructor() {}
 
   getList(): Promise<any[]> {
-    return fetch('http://localhost:7071/api/getList').then((data) =>
-      data.json()
-    );
+    return fetch('api/getList').then((data) => data.json());
   }
 }
